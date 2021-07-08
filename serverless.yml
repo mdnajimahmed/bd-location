@@ -1,0 +1,25 @@
+service: bd-location
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: dev
+  region: ap-southeast-1
+
+functions:
+  district-list:
+    handler: src/main.handler
+    memorySize: 128
+    description: List of district in bangladesh
+    events: 
+      - http: 
+          path: /
+          method: ANY
+          cors: true
+      - http: 
+          path: /{proxy+}
+          method: ANY
+          cors: true

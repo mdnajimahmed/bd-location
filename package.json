@@ -1,0 +1,30 @@
+{
+  "name": "bd-location",
+  "version": "1.0.0",
+  "description": "A repository to support static bd location mapping.",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.940.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "serverless-express": "^2.0.11",
+    "serverless-http": "^2.7.0",
+    "serverless-offline": "^7.0.0",
+    "slspress": "^2.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdnajimahmed/bd-location.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdnajimahmed/bd-location/issues"
+  },
+  "homepage": "https://github.com/mdnajimahmed/bd-location#readme"
+}
